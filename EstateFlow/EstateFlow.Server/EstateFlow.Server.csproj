@@ -35,6 +35,8 @@
     <ProjectReference Include="..\estateflow.client\estateflow.client.esproj">
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
+    <ProjectReference Include="..\EstateFlow.Application\EstateFlow.Application.csproj" />
+    <ProjectReference Include="..\EstateFlow.Infrastructure\EstateFlow.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
