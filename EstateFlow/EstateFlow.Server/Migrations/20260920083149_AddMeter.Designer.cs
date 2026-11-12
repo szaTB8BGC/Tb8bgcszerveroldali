@@ -25,7 +25,7 @@ namespace EstateFlow.Server.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("EstateFlow.Server.Domain.City", b =>
+            modelBuilder.Entity(" EstateFlow.Domain.City", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -64,7 +64,7 @@ namespace EstateFlow.Server.Migrations
                         });
                 });
 
-            modelBuilder.Entity("EstateFlow.Server.Domain.Meter", b =>
+            modelBuilder.Entity(" EstateFlow.Domain.Meter", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -92,7 +92,7 @@ namespace EstateFlow.Server.Migrations
                     b.ToTable("Meters");
                 });
 
-            modelBuilder.Entity("EstateFlow.Server.Domain.Property", b =>
+            modelBuilder.Entity(" EstateFlow.Domain.Property", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -160,7 +160,7 @@ namespace EstateFlow.Server.Migrations
                         });
                 });
 
-            modelBuilder.Entity("EstateFlow.Server.Domain.PropertyImage", b =>
+            modelBuilder.Entity(" EstateFlow.Domain.PropertyImage", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -221,9 +221,9 @@ namespace EstateFlow.Server.Migrations
                         });
                 });
 
-            modelBuilder.Entity("EstateFlow.Server.Domain.Meter", b =>
+            modelBuilder.Entity(" EstateFlow.Domain.Meter", b =>
                 {
-                    b.HasOne("EstateFlow.Server.Domain.Property", "Property")
+                    b.HasOne(" EstateFlow.Domain.Property", "Property")
                         .WithMany()
                         .HasForeignKey("PropertyId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -232,9 +232,9 @@ namespace EstateFlow.Server.Migrations
                     b.Navigation("Property");
                 });
 
-            modelBuilder.Entity("EstateFlow.Server.Domain.Property", b =>
+            modelBuilder.Entity(" EstateFlow.Domain.Property", b =>
                 {
-                    b.HasOne("EstateFlow.Server.Domain.City", "City")
+                    b.HasOne(" EstateFlow.Domain.City", "City")
                         .WithMany("Properties")
                         .HasForeignKey("CityId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -243,9 +243,9 @@ namespace EstateFlow.Server.Migrations
                     b.Navigation("City");
                 });
 
-            modelBuilder.Entity("EstateFlow.Server.Domain.PropertyImage", b =>
+            modelBuilder.Entity(" EstateFlow.Domain.PropertyImage", b =>
                 {
-                    b.HasOne("EstateFlow.Server.Domain.Property", "Property")
+                    b.HasOne(" EstateFlow.Domain.Property", "Property")
                         .WithMany("Images")
                         .HasForeignKey("PropertyId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -254,12 +254,12 @@ namespace EstateFlow.Server.Migrations
                     b.Navigation("Property");
                 });
 
-            modelBuilder.Entity("EstateFlow.Server.Domain.City", b =>
+            modelBuilder.Entity(" EstateFlow.Domain.City", b =>
                 {
                     b.Navigation("Properties");
                 });
 
-            modelBuilder.Entity("EstateFlow.Server.Domain.Property", b =>
+            modelBuilder.Entity(" EstateFlow.Domain.Property", b =>
                 {
                     b.Navigation("Images");
                 });

@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using EstateFlow.Server.Data;
-using EstateFlow.Server.Domain;
+using  EstateFlow.Domain;
 
 namespace EstateFlow.Server.Controllers
 {

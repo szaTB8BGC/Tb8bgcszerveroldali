@@ -1,6 +1,6 @@
 ﻿using EstateFlow.Server.Contracts.Meters;
 using EstateFlow.Server.Data;
-using EstateFlow.Server.Domain;
+using  EstateFlow.Domain;
 using EstateFlow.Server.Services;
 using FluentValidation;
 using Mapster;
