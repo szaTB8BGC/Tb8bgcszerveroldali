@@ -2,7 +2,10 @@
 using Microsoft.EntityFrameworkCore;
 
 using EstateFlow.Application;
-    public class EstateFlowDbContext : DbContext, IApplicationDbContext
+
+namespace EstateFlow.Infrastructure.Data;
+
+public class EstateFlowDbContext : DbContext, IApplicationDbContext
     {       
 
         public DbSet<City> Cities => Set<City>();

@@ -8,7 +8,7 @@ namespace EstateFlow.Infrastructure;
 
 public static class DependencyInjection
 {
-    public static IServiceCollection AddInfrastructure(this IServiceCollection servicesIConfiguration configuration)
+    public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
     {
         services.AddDbContext<EstateFlowDbContext>(options => options.UseNpgsql(configuration.GetConnectionString("EstateFlowDbConnection")));
         // Az interfészt kérő osztályok ugyanazt a scoped DbContext példányt kapják

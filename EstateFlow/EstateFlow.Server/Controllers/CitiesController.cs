@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-usingEstateFlow.Infrastructure.Data;
-using  EstateFlow.Domain;
+using EstateFlow.Infrastructure.Data;
+using EstateFlow.Domain;
 
 namespace EstateFlow.Server.Controllers
 {
