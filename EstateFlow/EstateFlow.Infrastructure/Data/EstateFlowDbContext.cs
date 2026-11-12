@@ -1,9 +1,8 @@
-﻿using  EstateFlow.Domain;
+﻿using EstateFlow.Domain;
 using Microsoft.EntityFrameworkCore;
 
-namespaceEstateFlow.Infrastructure.Data
-{
-    public class EstateFlowDbContext : DbContext
+using EstateFlow.Application;
+    public class EstateFlowDbContext : DbContext, IApplicationDbContext
     {       
 
         public DbSet<City> Cities => Set<City>();
@@ -463,4 +462,4 @@ namespaceEstateFlow.Infrastructure.Data
             );
         }
     }
-}
+

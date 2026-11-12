@@ -1,4 +1,4 @@
-﻿usingEstateFlow.Infrastructure.Data;
+﻿using EstateFlow.Application;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EstateFlow.Server.Controllers
@@ -10,10 +10,10 @@ namespace EstateFlow.Server.Controllers
         private const long MaxFileSizeBytes = 5 * 1024 * 1024;
         private static readonly string[] AllowedExtensions = [".jpg", ".jpeg", ".png"];
 
-        private readonly EstateFlowDbContext _context;
+        private readonly IApplicationDbContext _context;
         private readonly IWebHostEnvironment _environment;
 
-        public MeterReadingsController(EstateFlowDbContext context, IWebHostEnvironment environment)
+        public MeterReadingsController(IApplicationDbContext context, IWebHostEnvironment environment)
         {
             _context = context;
             _environment = environment;

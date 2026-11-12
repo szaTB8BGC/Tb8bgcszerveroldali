@@ -1,6 +1,6 @@
-﻿using EstateFlow.Server.Contracts.Meters;
+﻿using EstateFlow.Application.Contracts.Meters;
 
-namespace EstateFlow.Server.Services
+namespace EstateFlow.Application.Services
 {
     public interface IMeterReadingService
     {

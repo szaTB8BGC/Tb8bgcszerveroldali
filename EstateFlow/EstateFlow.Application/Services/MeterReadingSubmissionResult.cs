@@ -1,6 +1,6 @@
 ﻿using  EstateFlow.Domain;
 
-namespace EstateFlow.Server.Services
+namespace EstateFlow.Application.Services
 {
     public class MeterReadingSubmissionResult
     {

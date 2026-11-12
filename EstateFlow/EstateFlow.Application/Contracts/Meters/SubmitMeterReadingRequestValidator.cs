@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace EstateFlow.Server.Contracts.Meters
+namespace EstateFlow.Application.Contracts.Meters
 {
     public class SubmitMeterReadingRequestValidator : AbstractValidator<SubmitMeterReadingRequest>
     {

@@ -1,7 +1,7 @@
-﻿using EstateFlow.Server.Contracts.Meters;
-using EstateFlow.Server.Contracts.Properties;
-usingEstateFlow.Infrastructure.Data;
-using  EstateFlow.Domain;
+﻿using EstateFlow.Application;
+using EstateFlow.Domain;
+using EstateFlow.Application.Contracts.Meters;
+using EstateFlow.Application.Contracts.Properties;
 using FluentValidation;
 using Mapster;
 using Microsoft.AspNetCore.Mvc;
@@ -13,12 +13,12 @@ namespace EstateFlow.Server.Controllers
     [ApiController]
     public class PropertiesController : ControllerBase
     {
-        private readonly EstateFlowDbContext _context;
+        private readonly IApplicationDbContext _context;
         private readonly IValidator<CreatePropertyRequest> _createValidator;
         private readonly IValidator<UpdatePropertyRequest> _updateValidator;
 
-        public PropertiesController(EstateFlowDbContext context, 
-            IValidator<CreatePropertyRequest> createValidator, 
+        public PropertiesController(IApplicationDbContext context,
+            IValidator<CreatePropertyRequest> createValidator,
             IValidator<UpdatePropertyRequest> updateValidator)
         {
             _context = context;

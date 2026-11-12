@@ -1,4 +1,4 @@
-﻿namespace EstateFlow.Server.Contracts.Expenses
+﻿namespace EstateFlow.Application.Contracts.Expenses
 {
     public class ExpenseResponse
     {
