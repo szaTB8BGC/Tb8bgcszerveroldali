@@ -33,8 +33,8 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\User\\Tb8bgcszerveroldali\\EstateFlow\\EstateFlow.Domain\\EstateFlow.Domain.csproj": {
-                "projectPath": "C:\\Users\\User\\Tb8bgcszerveroldali\\EstateFlow\\EstateFlow.Domain\\EstateFlow.Domain.csproj"
+              "C:\\Users\\User\\Tb8bgcszerveroldali\\EstateFlow\\EstateFlow.Domain\\EstateFLow.Domain.csproj": {
+                "projectPath": "C:\\Users\\User\\Tb8bgcszerveroldali\\EstateFlow\\EstateFlow.Domain\\EstateFLow.Domain.csproj"
               }
             }
           }
@@ -367,14 +367,14 @@
         }
       }
     },
-    "C:\\Users\\User\\Tb8bgcszerveroldali\\EstateFlow\\EstateFLow.Domain\\EstateFLow.Domain.csproj": {
+    "C:\\Users\\User\\Tb8bgcszerveroldali\\EstateFlow\\EstateFlow.Domain\\EstateFLow.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Tb8bgcszerveroldali\\EstateFlow\\EstateFLow.Domain\\EstateFLow.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Tb8bgcszerveroldali\\EstateFlow\\EstateFlow.Domain\\EstateFLow.Domain.csproj",
         "projectName": "EstateFLow.Domain",
-        "projectPath": "C:\\Users\\User\\Tb8bgcszerveroldali\\EstateFlow\\EstateFLow.Domain\\EstateFLow.Domain.csproj",
+        "projectPath": "C:\\Users\\User\\Tb8bgcszerveroldali\\EstateFlow\\EstateFlow.Domain\\EstateFLow.Domain.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Tb8bgcszerveroldali\\EstateFlow\\EstateFLow.Domain\\obj\\",
+        "outputPath": "C:\\Users\\User\\Tb8bgcszerveroldali\\EstateFlow\\EstateFlow.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
